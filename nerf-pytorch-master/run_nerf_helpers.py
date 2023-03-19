@@ -163,6 +163,7 @@ class NeRF(nn.Module):
         self.alpha_linear.weight.data = torch.from_numpy(np.transpose(weights[idx_alpha_linear]))
         self.alpha_linear.bias.data = torch.from_numpy(np.transpose(weights[idx_alpha_linear+1]))
 
+# 임시변경
 
 # Ray helpers
 def get_rays(H, W, K, c2w):
